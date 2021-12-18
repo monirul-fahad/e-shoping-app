@@ -9,12 +9,14 @@ const Reviews = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:5000/reviews", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Review added successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://infinite-stream-11817.herokuapp.com/reviews", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Review added successfully");
+          reset();
+        }
+      });
   };
   return (
     <div className="row">

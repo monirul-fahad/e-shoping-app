@@ -9,7 +9,7 @@ const Sidebar = () => {
   const [admin, setAdmin] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user.email}`)
+    fetch(`https://infinite-stream-11817.herokuapp.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
