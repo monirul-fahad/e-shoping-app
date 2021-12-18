@@ -6,6 +6,7 @@ import useAuth from "../../hooks/useAuth";
 import axios from "axios";
 import Header from "../Shared/Header/Header";
 import "./ProductDetails.css";
+import Footer from "../Shared/Footer/Footer";
 
 const ProductDetails = () => {
   const {
@@ -39,25 +40,26 @@ const ProductDetails = () => {
   return (
     <>
       <Header></Header>
-      <div className="container my-5 py-5">
-        <h2 className="mb-5">Confirm you order </h2>
+      <div className=" pt-5">
         {!isLoading && (
-          <div className="row">
-            <div className="col-md-5">
-              <div className="card text-start">
-                <img
-                  src={product.img}
-                  className="card-img-top order-img"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">{product.name}</h5>
-                  <h6 className="card-title">${product.price}</h6>
-                  <p className="card-text">{product.description}</p>
+          <div className="">
+            <div className="py-5 container">
+              <div className="row d-flex align-items-center">
+                <div className="col-md-6">
+                  <img
+                    className="w-100"
+                    src={product.img}
+                    alt={product.title}
+                  />
+                </div>
+                <div className="col-md-6 text-start pe-5">
+                  <h2 className="fs-1 py-3">{product.title}</h2>
+                  <p className="fs-3 text-info">Price- {product.price} BDT</p>
+                  <p className="fs-4">{product.desc}</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-7 order">
+            <div className="order">
               <h2>place your order</h2>
               <form onSubmit={handleSubmit(onSubmit)}>
                 <input
@@ -87,6 +89,7 @@ const ProductDetails = () => {
         )}
         {isLoading && <Spinner animation="border" variant="danger" />}
       </div>
+      <Footer />
     </>
   );
 };

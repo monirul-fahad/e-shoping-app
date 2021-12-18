@@ -14,6 +14,48 @@ const Contact = () => {
         <h1 className="py-5">Contact Us</h1>
         <div className="row g-5">
           <div className="col-lg-6">
+            <div>
+              <input
+                type="text"
+                className="form-control"
+                name="name"
+                id=""
+                placeholder="Your Name"
+                defaultValue={user.displayName}
+              />
+              <br />
+
+              <input
+                type="email"
+                className="form-control"
+                name="email"
+                id=""
+                placeholder="Your Email"
+                defaultValue={user.email}
+              />
+              <br />
+              <input
+                type="text"
+                className="form-control"
+                name="phone"
+                id=""
+                placeholder="Phone Number"
+              />
+              <br />
+              <textarea
+                name="textarea"
+                className="form-control"
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="Massage"
+              />
+              <br />
+
+              <button className=" btn btn-success w-100 px-4">SEND</button>
+            </div>
+          </div>
+          <div className="col-lg-6">
             <div className="row">
               <div className="col-md-3 p-2">
                 <p className="advertise-icon justify-content-center d-flex align-items-center">
@@ -64,48 +106,6 @@ const Contact = () => {
                   <strong>Email:</strong> fahad@gmail.com
                 </p>
               </div>
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <div>
-              <input
-                type="text"
-                className="form-control"
-                name="name"
-                id=""
-                placeholder="Your Name"
-                defaultValue={user.displayName}
-              />
-              <br />
-
-              <input
-                type="email"
-                className="form-control"
-                name="email"
-                id=""
-                placeholder="Your Email"
-                defaultValue={user.email}
-              />
-              <br />
-              <input
-                type="text"
-                className="form-control"
-                name="phone"
-                id=""
-                placeholder="Phone Number"
-              />
-              <br />
-              <textarea
-                name="textarea"
-                className="form-control"
-                id=""
-                cols="30"
-                rows="5"
-                placeholder="Massage"
-              />
-              <br />
-
-              <button className=" btn btn-success px-4">SEND</button>
             </div>
           </div>
         </div>

@@ -8,11 +8,12 @@ const Footer = () => {
       <Container>
         <footer className="row text-start">
           <div className="col-md-6 col-lg-3 ">
-            <h3>Glassy Yard</h3>
+            <h3>FASH HOUSE</h3>
             <p>
-              We provide friendly, well-trained guide for your travelling. you
-              will be satisfied. Our priority is you. We'll never leave you
-              hand. You will never walk alone.
+              We provide handmade, homemade, stylist designing cloths and
+              dresses for your daily uses and casual uses. Our priority is you
+              and your satisfaction. We'll never disappointed in quality and
+              pricing
             </p>
           </div>
           <div className="col-md-6 col-lg-3 ">

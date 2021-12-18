@@ -21,7 +21,7 @@ const Sidebar = () => {
     >
       <ul className="list-unstyled li-style">
         <Link style={{ textDecoration: "none" }} to="/">
-          <h2 className="glassy">Glassy</h2>
+          <h2 className="glassy">Fash House</h2>
         </Link>
         {!admin && (
           <>
