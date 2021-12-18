@@ -39,6 +39,7 @@ const Login = () => {
               <input
                 onBlur={handleEmailChange}
                 type="email"
+                placeholder="Email"
                 className="form-control mb-3"
                 id="inputName"
                 required
@@ -47,6 +48,7 @@ const Login = () => {
               <input
                 onBlur={handlePasswordChange}
                 type="password"
+                placeholder="Password"
                 className="form-control mb-3"
                 id="inputPassword3"
                 required
