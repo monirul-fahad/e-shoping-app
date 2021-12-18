@@ -1,0 +1,15 @@
+.footer-area h3 {
+  padding-bottom: 20px;
+}
+.footer-area {
+  color: #fff;
+  background-color: #494444;
+}
+.footer-area a {
+  text-decoration: none;
+  color: #969696;
+}
+.footer-area a:hover {
+  text-decoration: none;
+  color: #fff;
+}

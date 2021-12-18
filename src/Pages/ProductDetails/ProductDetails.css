@@ -1,0 +1,27 @@
+.order form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.order form input {
+  font-size: 25px;
+}
+.order form input,
+textarea {
+  width: 60%;
+  margin-bottom: 20px !important;
+}
+.order {
+  /* background-color: rgb(248, 239, 225); */
+  padding: 40px 0;
+}
+.order h2 {
+  font-family: "Righteous", cursive;
+  padding: 20px 0;
+}
+
+.order-img {
+  max-height: 400px;
+  object-fit: cover;
+}

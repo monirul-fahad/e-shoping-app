@@ -1,0 +1,15 @@
+.testimonial {
+  background-color: azure;
+}
+
+.testimonial-card {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.testimonial h1 {
+  font-family: "Righteous", cursive;
+  color: black;
+}
+
+.icon-color {
+  color: gold;
+}

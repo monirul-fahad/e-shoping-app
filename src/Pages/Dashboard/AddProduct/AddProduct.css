@@ -1,0 +1,22 @@
+.add-product form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.add-product form input {
+  font-size: 25px;
+}
+.add-product form input,
+textarea {
+  width: 60%;
+  margin-bottom: 20px !important;
+}
+.add-product {
+  /* background-color: rgb(248, 239, 225); */
+  padding: 40px 0;
+}
+.add-product h2 {
+  font-family: "Righteous", cursive;
+  padding: 20px 0;
+}
